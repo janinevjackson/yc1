@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*  Dit is css */
+        p{
+            font-size: 16px;
+            color:green;
+        }
+
+        .bg-color {
+            background-color: blue;
+        }
+        #menu {
+            font-size:40px;
+        }
+    </style>
+    <script>
+        //Dit is Javascript commentaar
+        let a = 6; 
+        let b =5;
+
+        console.log('A = ' + a)
+
+       let z = {powered:true, brand:'lenovo'}
+       console.log(z);
+
+       function telop() {
+            alert('Hier ga ik optellen');
+            let getal1 = 34;
+            let getal2 = 5;
+
+            let getalTelop = getal1 + getal2;
+            console.log(getalTelop);
+
+       }
+
+
+        function doeTelop() {
+            let getal1 = document.getElementById('getal1-invoer').value;
+            alert(getal1);
+        }
+       
+
+       telop();
+
+    </script>
+</head>
+<body>
+    <!-- Dit is commentaar -->
+    <h1 id="menu">Mijn eerste pagina</h1>
+
+    <input type="number" id="getal1-invoer" value="2">
+    <button type="button" onclick="doeTelop()">
+        Telop
+    </button>
+
+    <p> dit is een paragraaf</p> <p> dit is een tweede paragraaf</p>
+
+    <span style="color:rgb(224, 128, 248);"> dit is span 1 </span> <span> dit is span 2</span>
+
+    <ol class="bg-color"> 
+        <li> Item 1</li> <li> Item 2</li> <li> Item 3</li>
+    
+    </ol>
+    <ul>
+        <li>Item 4</li>
+        <li>Item 5 </li>
+    </ul>
+
+    <table>
+        <tr>
+            <td>Rij 1 - Cell 1</td>
+            <td>Rij 1 - Cell 2</td>
+        </tr>
+        <tr>
+            <td> Rij 2 - Cell 1</td>
+        </tr>
+    </table>
+</body>
+</html>
